@@ -1,0 +1,42 @@
+======================================================================
+UCSF-PDGM DATASET VERIFICATION SUMMARY
+======================================================================
+
+Dataset Path: /content/Dataset/PKG - UCSF-PDGM Version 5/UCSF-PDGM-v5
+Metadata CSV: /content/Dataset/PKG - UCSF-PDGM Version 5/UCSF-PDGM-metadata_v5.csv
+Expected Modalities: T1, T1c, T2, FLAIR
+
+----------------------------------------------------------------------
+OVERALL STATISTICS
+----------------------------------------------------------------------
+Total patients in metadata:        501
+Folders missing:                    0
+Patients with all files complete:   501
+Patients with incomplete files:     0
+Completeness rate:                  100.0%
+
+----------------------------------------------------------------------
+MISSING FILES BY MODALITY
+----------------------------------------------------------------------
+T1              missing:    0 (  0.0%)
+T1c             missing:    0 (  0.0%)
+T2              missing:    0 (  0.0%)
+FLAIR           missing:    0 (  0.0%)
+Segmentation missing:    0 (  0.0%)
+
+----------------------------------------------------------------------
+GRADE DISTRIBUTION (COMPLETE PATIENTS)
+----------------------------------------------------------------------
+Total complete patients: 501
+
+Binary Grade Distribution:
+  Low Grade (0): 99 (19.8%)
+  High Grade (1): 402 (80.2%)
+
+======================================================================
+RECOMMENDATIONS
+======================================================================
+1. Focus model training on the 501 complete patients
+2. Be aware of class imbalance (high-grade >> low-grade)
+4. Use patient-level splits to avoid data leakage
+5. Consider weighted sampling to handle class imbalance
